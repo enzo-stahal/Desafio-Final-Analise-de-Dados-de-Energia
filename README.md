@@ -1,162 +1,75 @@
 # Desafio Final — Análise de Dados de Energia com API Pública
 
-## 📌 Sobre o projeto
+## 📌 Sobre o projeto do desafio
 
-Este projeto foi desenvolvido como parte da disciplina de **Soluções em Energias Renováveis e Sustentáveis**, do curso de **Ciência da Computação**.
+Projeto desenvolvido para a disciplina de **Soluções em Energias Renováveis e Sustentáveis**, do curso de **Ciência da Computação**.
 
-O objetivo da atividade é analisar o comportamento da **carga elétrica** de uma região atendida pelo **Sistema Interligado Nacional (SIN)** utilizando dados obtidos diretamente de uma **API pública do Operador Nacional do Sistema Elétrico (ONS)**.
+O objetivo é analisar o comportamento da **carga elétrica de São Paulo**, utilizando dados da **API pública do Operador Nacional do Sistema Elétrico (ONS)**.
 
-A análise foi realizada utilizando Python e bibliotecas para manipulação, análise e visualização de dados.
+A análise foi realizada em **Python**, utilizando bibliotecas de manipulação e visualização de dados.
 
 ## 🎯 Objetivos
 
-O projeto tem como objetivos:
-
-* Construir um DataFrame a partir dos dados obtidos pela API do ONS;
-* Inspecionar e organizar os dados;
-* Identificar e tratar valores ausentes;
-* Verificar os tipos das variáveis;
-* Calcular indicadores estatísticos da carga elétrica;
+* Obter dados de carga elétrica por meio da API do ONS;
+* Criar e organizar um DataFrame com **Pandas**;
+* Verificar e tratar valores ausentes;
+* Analisar tipos e características dos dados;
+* Calcular indicadores estatísticos da carga;
 * Identificar períodos de alta demanda;
-* Criar diferentes critérios de análise;
-* Produzir gráficos para visualização dos dados;
-* Elaborar um relatório técnico com base nos resultados obtidos;
-* Realizar uma validação crítica das conclusões apresentadas.
+* Comparar diferentes critérios de demanda;
+* Criar gráficos para visualizar os resultados;
+* Elaborar e validar um relatório técnico.
 
 ## 📊 Dados analisados
-
-Inicialmente, foi analisada a área de carga:
 
 * **Área:** SP — São Paulo
 * **Período:** 01/08/2025 a 07/08/2025
 * **Sistema:** Sistema Interligado Nacional (SIN)
+* **Dados:** Carga Verificada
 * **Fonte:** Operador Nacional do Sistema Elétrico (ONS)
-
-Os dados utilizados correspondem à **Carga Verificada do ONS**.
 
 ## 🔎 Metodologia
 
-A análise foi dividida em diferentes etapas.
+Os dados obtidos pela API foram transformados em um DataFrame e analisados utilizando **Pandas**.
 
-### 1. Construção e inspeção dos dados
+Foram realizadas:
 
-Os registros retornados pela API são transformados em um DataFrame utilizando a biblioteca Pandas.
-
-São realizadas análises como:
-
-* visualização dos primeiros registros;
-* quantidade de linhas e colunas;
-* identificação dos atributos;
-* análise dos tipos de dados;
-* estatísticas descritivas.
-
-### 2. Organização dos dados
-
-Os principais atributos são selecionados e recebem nomes mais simples para facilitar a análise.
-
-Também são verificadas:
-
-* informações de data e hora;
-* valores ausentes;
-* representação numérica da carga;
-* organização cronológica das observações.
-
-### 3. Indicadores da carga elétrica
-
-São calculados os seguintes indicadores:
-
-* carga mínima;
-* carga máxima;
-* carga média;
-* mediana;
-* amplitude entre o máximo e o mínimo;
-* quantidade total de medições.
-
-Esses indicadores são utilizados para avaliar o comportamento geral da carga durante o período analisado.
-
-### 4. Períodos de alta demanda
-
-Foi definido como **alta demanda** todo registro cuja carga seja superior a **90% da carga máxima observada**.
-
-Para esse critério são calculados:
-
-* limiar de alta demanda;
-* quantidade de registros;
-* percentual em relação ao total;
-* maior valor de carga;
-* data e horário do pico, quando disponíveis.
-
-### 5. Segundo critério de análise
-
-Além do critério de alta demanda, é utilizado um segundo recorte considerando os registros com **carga acima da média**.
-
-Esse segundo conjunto é comparado com os registros classificados como alta demanda.
-
-### 6. Visualização
-
-São produzidos pelo menos dois gráficos:
-
-1. comportamento da carga ao longo do tempo;
-2. distribuição dos valores de carga.
-
-Os gráficos são utilizados para auxiliar na interpretação dos resultados.
+1. **Inspeção dos dados** — análise de registros, colunas, tipos e estatísticas;
+2. **Organização** — seleção e renomeação de atributos, tratamento de datas e valores ausentes;
+3. **Análise estatística** — cálculo de carga mínima, máxima, média, mediana, amplitude e quantidade de medições;
+4. **Alta demanda** — identificação de registros com carga superior a **90% da carga máxima**;
+5. **Segundo critério** — identificação dos registros com carga **acima da média**;
+6. **Visualização** — criação de gráficos da carga ao longo do tempo e da distribuição dos valores.
 
 ## 🛠️ Tecnologias utilizadas
 
-* **Python**
-* **Pandas**
-* **Matplotlib**
-* **Seaborn**
-* **Requests**
-* **Google Colab**
-* **API pública do ONS**
-
-### Notebook
-
-O arquivo `Desafio_Final_Energia_ONS_Completo.ipynb` contém os códigos, resultados, gráficos, análises e relatório desenvolvidos durante a atividade.
-
-## 🌐 Fonte dos dados
-
-Os dados foram obtidos por meio da API pública do **Operador Nacional do Sistema Elétrico (ONS)**.
-
-### Portal de dados do ONS
-
-https://dados.ons.org.br/
-
-### Conjunto de dados — Carga de Energia Verificada
-
-https://dados.ons.org.br/dataset/carga-energia-verificada
-
-### API utilizada
-
-https://apicarga.ons.org.br/prd/cargaverificada
-
-## 📈 Resultados
-
-Os resultados quantitativos da análise, incluindo os indicadores estatísticos, períodos de alta demanda, pico de carga e gráficos, estão apresentados no notebook.
-
-As conclusões foram elaboradas com base nos resultados produzidos durante a análise, evitando atribuir causas às variações que não possam ser comprovadas pelos dados.
-
-## 🤖 Uso de Inteligência Artificial
-
-O notebook prevê o uso do **Gemini** como apoio para a elaboração do relatório técnico.
-
-A IA recebe os resultados calculados pela equipe e auxilia na organização e redação do relatório. Posteriormente, o texto gerado é submetido a uma **validação crítica**, verificando se as informações apresentadas são compatíveis com os dados, indicadores e gráficos obtidos.
+* Python
+* Pandas
+* Matplotlib
+* Seaborn
+* Requests
+* Google Colab
+* API pública do ONS
 
 ## 👥 Disciplina
 
 **Curso:** Ciência da Computação
 **Disciplina:** Soluções em Energias Renováveis e Sustentáveis
 
-## 📚 Referências
+---
 
-**Operador Nacional do Sistema Elétrico — ONS**
+# 🌐 Links e referências
 
-Portal de dados:
-https://dados.ons.org.br/
+### Portal de Dados do ONS
 
-Dataset:
-https://dados.ons.org.br/dataset/carga-energia-verificada
+[https://dados.ons.org.br/](https://dados.ons.org.br/?utm_source=chatgpt.com)
 
-API:
-https://apicarga.ons.org.br/prd/cargaverificada
+### Dataset — Carga de Energia Verificada
+
+[https://dados.ons.org.br/dataset/carga-energia-verificada](https://dados.ons.org.br/dataset/carga-energia-verificada?utm_source=chatgpt.com)
+
+### API — Carga Verificada
+
+[https://apicarga.ons.org.br/prd/cargaverificada](https://apicarga.ons.org.br/prd/cargaverificada?utm_source=chatgpt.com)
+
+# 🌐 Links e referências dos desafios da aual 3 e aula 4
