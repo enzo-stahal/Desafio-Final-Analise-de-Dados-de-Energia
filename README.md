@@ -1,5 +1,3 @@
-# Desafio-Final-An-lise-de-Dados-de-Energia-com-API-P-blica
-
 # Desafio Final — Análise de Dados de Energia com API Pública
 
 ## 📌 Sobre o projeto
