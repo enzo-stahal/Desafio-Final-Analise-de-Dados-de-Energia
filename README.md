@@ -1,6 +1,6 @@
 # Desafio Final — Análise de Dados de Energia com API Pública
 
-## 📌 Sobre o projeto do desafio
+## Sobre o projeto do desafio
 
 Projeto desenvolvido para a disciplina de **Soluções em Energias Renováveis e Sustentáveis**, do curso de **Ciência da Computação**.
 
@@ -8,7 +8,7 @@ O objetivo é analisar o comportamento da **carga elétrica de São Paulo**, uti
 
 A análise foi realizada em **Python**, utilizando bibliotecas de manipulação e visualização de dados.
 
-## 🎯 Objetivos
+## Objetivos
 
 * Obter dados de carga elétrica por meio da API do ONS;
 * Criar e organizar um DataFrame com **Pandas**;
@@ -19,8 +19,8 @@ A análise foi realizada em **Python**, utilizando bibliotecas de manipulação 
 * Comparar diferentes critérios de demanda;
 * Criar gráficos para visualizar os resultados;
 * Elaborar e validar um relatório técnico.
-
-## 📊 Dados analisados
+  
+## Dados analisados
 
 * **Área:** SP — São Paulo
 * **Período:** 01/08/2025 a 07/08/2025
@@ -28,7 +28,7 @@ A análise foi realizada em **Python**, utilizando bibliotecas de manipulação 
 * **Dados:** Carga Verificada
 * **Fonte:** Operador Nacional do Sistema Elétrico (ONS)
 
-## 🔎 Metodologia
+## Metodologia
 
 Os dados obtidos pela API foram transformados em um DataFrame e analisados utilizando **Pandas**.
 
@@ -41,7 +41,7 @@ Foram realizadas:
 5. **Segundo critério** — identificação dos registros com carga **acima da média**;
 6. **Visualização** — criação de gráficos da carga ao longo do tempo e da distribuição dos valores.
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 * Python
 * Pandas
@@ -51,14 +51,14 @@ Foram realizadas:
 * Google Colab
 * API pública do ONS
 
-## 👥 Disciplina
+## Disciplina
 
 **Curso:** Ciência da Computação
 **Disciplina:** Soluções em Energias Renováveis e Sustentáveis
 
 ---
 
-# 🌐 Links e referências
+# Links e referências
 
 ### Portal de Dados do ONS
 
@@ -72,4 +72,4 @@ Foram realizadas:
 
 [https://apicarga.ons.org.br/prd/cargaverificada](https://apicarga.ons.org.br/prd/cargaverificada?utm_source=chatgpt.com)
 
-# 🌐 Links e referências dos desafios da aual 3 e aula 4
+# Links e referências dos desafios da aual 3 e aula 4
