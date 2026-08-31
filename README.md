@@ -72,4 +72,3 @@ Foram realizadas:
 
 [https://apicarga.ons.org.br/prd/cargaverificada](https://apicarga.ons.org.br/prd/cargaverificada?utm_source=chatgpt.com)
 
-# Links e referências dos desafios da aual 3 e aula 4
