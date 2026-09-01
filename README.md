@@ -1,3 +1,12 @@
+Integrantes
+Brenno F. G. dos Santos | 570525
+ 
+Eduardo Moreira Silva | 569923
+ 
+Enzo Stahal Freitas | 569001
+ 
+Matheus Bruno de Lima | 572944
+
 # Desafio Final — Análise de Dados de Energia com API Pública
 
 ## Sobre o projeto do desafio
